@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-strapi-build",
+  "name": "strapi-plugin-build-static",
   "version": "0.0.1",
   "description": "This plugin is used to build a static version of your gatsby site from the Strapi UI.",
   "strapi": {
