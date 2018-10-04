@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "StrapiBuild.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/build",
+      "handler": "StrapiBuild.build",
+      "config": {
+        "policies": [
+          "isAuthenticated"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moveBuilt",
+      "handler": "StrapiBuild.moveBuilt",
+      "config": {
+        "policies": [
+          "isAuthenticated"
+        ]
+      }
+    }
+  ]
+}
