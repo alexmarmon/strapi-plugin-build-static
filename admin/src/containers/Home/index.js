@@ -12,18 +12,18 @@ export default class Home extends Component {
 
   build = () => {
     this.setState({ loading: true });
-    request('/strapi-build/build', {
+    request('/strapi-plugin-build-static/build', {
       method: 'GET',
-      params: { source: 'strapi-build' },
+      params: { source: 'strapi-plugin-build-static' },
     }).then(response => response.success ? this.moveBuilt() : this.err(response))
     .catch(this.err);
   }
 
   // keep moveBuilt action seperate incase build fails.
   moveBuilt = () => {
-    request('/strapi-build/moveBuilt', {
+    request('/strapi-plugin-build-static/moveBuilt', {
       method: 'GET',
-      params: { source: 'strapi-build' },
+      params: { source: 'strapi-plugin-build-static' },
     }).then(response => {
       this.setState({ loading: false, message: response.message });
     }).catch(this.err);

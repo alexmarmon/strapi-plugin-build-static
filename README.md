@@ -1,9 +1,9 @@
-# Strapi plugin
+# Strapi Plugin - Build Static
 
-# Normal Installation
+### Normal Installation
 1.
 
-# Making Changes
+### Making Changes
 1. Follow the Development Environment Setup steps [here.](https://github.com/alexmarmon/strapi/blob/master/docs/3.x.x/en/plugin-development/quick-start.md)
 2. Create a new Strapi Dev project `strapi new myDevelopmentProject --dev`
 3. Go to plugins folder `cd myDevelopmentProject/plugins/`
@@ -12,4 +12,5 @@
 6. Link strapi helper `npm link strapi-helper-plugin`
 7. Make changes
 8. Run build command `npm run build`
-9. Copy plugin to production project `cd ../; cp -R strapi-plugin-build-static/ ../../myActualStrapiProject`
+9. Copy build files to production project `cd ../; cp -R strapi-plugin-build-static/admin/build ../../myActualStrapiProject/plugins/admin/`
+10. Start the prod project `strapi start`
