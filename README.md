@@ -12,5 +12,5 @@
 6. Link strapi helper `npm link strapi-helper-plugin`
 7. Make changes
 8. Run build command `npm run build`
-9. Copy plugin to production project `cd ../; cp -R strapi-plugin-build-static/ ../../myActualStrapiProject/plugins/`
+9. Copy build files to production project `cd ../; cp -R strapi-plugin-build-static/admin/build ../../myActualStrapiProject/plugins/admin/`
 10. Start the prod project `strapi start`
