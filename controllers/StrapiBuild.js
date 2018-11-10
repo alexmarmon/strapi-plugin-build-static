@@ -26,7 +26,7 @@ module.exports = {
   },
 
   build: async () => new Promise((resolve, reject) => {
-    const shell = spawn('npm', ['run', 'build'], {
+    const shell = spawn('npm', ['run', 'strapi:build'], {
       cwd: '../'
     });
 
@@ -38,7 +38,7 @@ module.exports = {
   }),
 
   moveBuilt: async () => new Promise((resolve, reject) => {
-    const shell = spawn('npm', ['run', 'moveBuilt'], {
+    const shell = spawn('npm', ['run', 'strapi:moveBuilt'], {
       cwd: '../'
     });
 
